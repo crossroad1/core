@@ -42,7 +42,7 @@ The server that access this file needs a little more information :
 *  The App or Component that will use this message. 
 *  The Priority of the message.
 
-This will allow to manage the way messages arrives on a server. 
+This will allow to manage the way messages arrive on a server and direct them into the right service. 
 
 In order to do so, Priority will be set-up on each message. 
 
