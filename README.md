@@ -8,7 +8,7 @@ This is based on several security standards such as :
 * 3DSecure
 * And others to come...
 
-## Core App 
+# Core App 
 
 The Core App is meant to be the communicating part of the project.
 
@@ -16,7 +16,7 @@ This includes the **message's dispatcher** and the **message's creator API**
 
 Let's see how this works...
 
-### Message's Dispatcher
+## Message's Dispatcher
 
 The point of the **Message's Dispatcher** is simply to move data on its hard drive. 
 
@@ -27,15 +27,14 @@ See an example here :
 ```
 DestinationServer_DestinationComponent_MessagePriority_<possibly-more-options>.crm
 ```
-#### DestinationServer :
+### DestinationServer :
 
 Let the app knows :
 
 *  Who can access this file,
 *  Where it has to be distributed. 
 
-#### __DestinationComponent & MessagePriority :__
-
+### __DestinationComponent & MessagePriority :__
 
 The server that access this file needs a little more information : 
 
@@ -46,6 +45,24 @@ This will allow to manage the way messages arrive on a server and direct them in
 
 In order to do so, Priority will be set-up on each message. 
 
-### Message's Creator API 
+## Message's Creator API 
 
-More to come...
+In order to create useful messages, an API is required. 
+
+Some key points are explained here : 
+
+### 1. Security
+
+Security is the foundation for this server to server communication app. As so, we must provide integrity to our messages.
+
+**By default**, the API must: 
+
+*  Provide issuing time,
+*  Provide a validity period to the message (after this, the message won't be usable anymore),
+*  Provide the issuer of the message (by name, or ID),
+*  Provide an ID to the message (to be able to retrieve transactions),
+*  Provide a possible encryption (if the data being transfered requires it, it must be done),
+*  Provide the target (who can read the message).
+*  Other needs will come later...
+
+### 2. Will come soon...
