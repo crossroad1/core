@@ -12,7 +12,7 @@ This is based on several security standards such as :
 
 The Core App is meant to be the communicating part of the project.
 
-This includes the **message's dispatcher** and the **message's creator API**
+This includes the **message's dispatcher**, the **message's creator API** and the **message reader**.
 
 Let's see how this works...
 
@@ -66,3 +66,15 @@ Security is the foundation for this server to server communication app. As so, w
 *  Other needs will come later...
 
 ### 2. Will come soon...
+
+## Message's Reader
+
+Servers need an agent that will be able to catch the sent messages, 
+
+It will also allow them to give a feedback about the performed actions.
+
+This agent needs to be as generic as possible, in order to take into account as much possibilities as possible.
+
+Its job will mostly be to consume the messages, by getting the actions ordered by it. 
+
+Security checks will be performed locally in order to make sure that the requestor has permissions to run tasks on the machine.
