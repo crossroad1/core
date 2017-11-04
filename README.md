@@ -75,6 +75,6 @@ It will also allow them to give a feedback about the performed actions.
 
 This agent needs to be as generic as possible, in order to take into account as much possibilities as possible.
 
-Its job will mostly be to consume the messages, by getting the actions ordered by it. 
+Its job will mostly to consume the messages, by getting the actions ordered by it. 
 
 Security checks will be performed locally in order to make sure that the requestor has permissions to run tasks on the machine.
