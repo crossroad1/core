@@ -72,16 +72,16 @@ In order to let the message useful, many fields are needed.
 But, an API, by default, can't fit every needs. This is why it will need to :
 
 * Be dynamic by :
-1 Providing a field's creation (to be able to custom the API),
-2 Providing different templates for some system actions.
+1. Providing a field's creation (to be able to custom the API),
+2. Providing different templates for some system actions.
 * Provide different running modes :
-1 Copying configuration files (it can happen that no commands are required, in that case, we simply setup configuration),
-2 Performing actions (it might be shell actions that will work using scripts)
+1. Copying configuration files (it can happen that no commands are required, in that case, we simply setup configuration),
+2. Performing actions (it might be shell actions that will work using scripts)
 * Provide an history of actions that have been done :
-1 In order to track actions,
-2 Being able to undo a performed action (in case something goes wrong).
+1. In order to track actions,
+2. Being able to undo a performed action (in case something goes wrong).
 * Provide a server dependency list (some servers need to work with some others) : 
-1 Prevents from a service interuption (if the dependency is not up, all actions are postponed).
+1. Prevents from a service interuption (if the dependency is not up, all actions are postponed).
 
 
 
